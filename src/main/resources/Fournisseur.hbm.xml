@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tricol.entity">
+    <class name="Fournisseur" table="fournisseurs">
+        <id name="id" column="id">
+            <generator class="identity"/>
+        </id>
+        
+        <property name="societe" column="societe"/>
+        <property name="adresse" column="adresse"/>
+        <property name="contact" column="contact"/>
+        <property name="email" column="email"/>
+        <property name="telephone" column="telephone"/>
+        <property name="ville" column="ville"/>
+        <property name="ice" column="ice"/>
+    </class>
+</hibernate-mapping>

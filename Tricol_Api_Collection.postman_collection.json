@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "cdf73094-a503-4740-b8f1-8675925a684a",
+		"name": "Tricol_Api_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42982060"
+	},
+	"item": [
+		{
+			"name": "Get all Fournisseurs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Tricol_war_exploded/api/fournisseurs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Tricol_war_exploded",
+						"api",
+						"fournisseurs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Fournisseur By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Tricol_war_exploded/api/fournisseur/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Tricol_war_exploded",
+						"api",
+						"fournisseur",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"societe\": \"bratan Corporation\",\r\n    \"adresse\": \"Avenue Mohammed VI, Casablanca\",\r\n    \"contact\": \"Mohammed Benali\",\r\n    \"email\": \"moha@abc-corp.ma\",\r\n    \"telephone\": \"+212588123456\",\r\n    \"ville\": \"Casablanca\",\r\n    \"ice\": \"001234102890123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Tricol_war_exploded/api/fournisseurs/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Tricol_war_exploded",
+						"api",
+						"fournisseurs",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 4,\r\n        \"societe\": \"bratan Corporation\",\r\n        \"adresse\": \"Avenue Mohammed VI, Casablanca\",\r\n        \"contact\": \"Mohammed Benali\",\r\n        \"email\": \"moha@abc-corp.ma\",\r\n        \"telephone\": \"+212588123456\",\r\n        \"ville\": \"Meknes\",\r\n        \"ice\": \"001234102890123\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Tricol_war_exploded/api/fournisseurs/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Tricol_war_exploded",
+						"api",
+						"fournisseurs",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"societe\": \"bratan Corporation\",\r\n    \"adresse\": \"Avenue Mohammed VI, Casablanca\",\r\n    \"contact\": \"Mohammed Benali\",\r\n    \"email\": \"moha@abc-corp.ma\",\r\n    \"telephone\": \"+212588123456\",\r\n    \"ville\": \"Fes\",\r\n    \"ice\": \"001234102890123\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/Tricol_war_exploded/api/fournisseurs/delete/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Tricol_war_exploded",
+						"api",
+						"fournisseurs",
+						"delete",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
