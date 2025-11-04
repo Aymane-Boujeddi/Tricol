@@ -48,6 +48,7 @@
     
     <bean id="fournisseurController" class="com.tricol.controller.FournisseurController">
         <property name="fournisseurService" ref="fournisseurService"/>
+
     </bean>
 
     <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">

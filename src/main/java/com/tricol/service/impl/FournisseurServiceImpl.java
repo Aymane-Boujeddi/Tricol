@@ -4,8 +4,10 @@ import com.tricol.entity.Fournisseur;
 import com.tricol.repository.FournisseurRepository;
 import com.tricol.service.FournisseurService;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Predicate;
 
 public class FournisseurServiceImpl implements FournisseurService {
     
@@ -34,4 +36,8 @@ public class FournisseurServiceImpl implements FournisseurService {
     public void deleteById(Long id) {
         repository.deleteById(id);
     }
+
+
+
+
 }

@@ -11,13 +11,15 @@ import java.util.List;
 import java.util.Optional;
 
 public class FournisseurController extends AbstractController {
-    
+
     private FournisseurService fournisseurService;
     private JsonMapper jsonMapper = JsonMapper.builder().build();
     
     public void setFournisseurService(FournisseurService fournisseurService) {
         this.fournisseurService = fournisseurService;
     }
+
+
     
     @Override
     protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response) throws Exception {
